@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "https://inkurb.com/frontend-placement-course/"
-    }
-  ]
-}
