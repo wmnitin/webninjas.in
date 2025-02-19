@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "https://jsconfig.com/reactjs-course-content"
+      "destination": "https://inkurb.com/frontend-placement-course/"
     }
   ]
 }
