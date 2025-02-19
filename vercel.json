@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/reactjs-course-content",
+      "destination": "https://jsconfig.com/reactjs-course-content"
+    }
+  ]
+}
