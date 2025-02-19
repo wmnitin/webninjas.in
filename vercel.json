@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "https://inkurb.com/frontend-placement-course/"
+      "destination": "https://inkurb.com/frontend-placement-course"
     }
   ]
 }
