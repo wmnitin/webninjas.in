@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/:path*",
-      "destination": "https://inkurb.com/frontend-placement-course/:path*"
+      "source": "/",
+      "destination": "https://inkurb.com/frontend-placement-course/"
     }
   ]
 }
