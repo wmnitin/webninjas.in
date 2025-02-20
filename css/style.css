@@ -93,6 +93,7 @@ h6 {
     font-weight: 700;
     text-transform: uppercase;
     color: #000000;
+    max-width: 200px;
 }
 
 #nav .navbar-light .nav-link {
@@ -154,7 +155,7 @@ h6 {
 #header {
     position: relative;
     padding: 100px 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 5% , rgba(255, 255, 255, .5)), url(../img/header-bg.jpg);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 5% , rgba(255, 255, 255)), url(../img/header-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1211,3 +1212,30 @@ h6 {
 #footer p a:hover {
     color: #ffffff;
 }
+
+.full-width-strip {
+    width: 100%;
+    margin-bottom: 120px;
+    background: linear-gradient(0deg, #f8f9fa00, #ffc10759 50%, #21252900);
+    padding: 1rem 0;
+  }
+  
+  .shiny-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff9900, #000000c7, #ff9900);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 2s infinite linear;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 200%;
+    }
+  }
