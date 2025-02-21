@@ -524,7 +524,14 @@ h6 {
     border-radius: 0 4px 4px 0;
     transition: .3s;
 }
+.btn-orange {
+    background-color: #f26531;
+    border: none;
+}
 
+.btn-orange:hover {
+    background-color: #e05a29;
+}
 #newsletter form .btn:hover {
     color: #333333;
     background: #ffffff;
