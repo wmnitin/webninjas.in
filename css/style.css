@@ -1350,3 +1350,33 @@ h6 {
   width: 1px;
   background-color: #151635;
 }
+
+#callback {
+  background-color: #f8f9fa; /* Light grey background */
+  padding: 2rem 0;
+  border-radius: 12px;
+}
+
+#callback .container {
+  max-width: 900px;
+}
+
+#callback h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #343a40;
+}
+
+#callback p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #6c757d;
+}
+
+#leadGenerationComponent {
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
