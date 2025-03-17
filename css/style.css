@@ -248,84 +248,83 @@ h6 {
 /******** Mini Feature CSS ********/
 /**********************************/
 #feature-mini {
-    position: relative;
-    background: transparent;
-    margin-top: -80px;
-  }
-  
-  #feature-mini .container {
-    max-width: 992px;
-    background: #ffd662;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
+  position: relative;
+  background: transparent;
+  margin-top: -80px;
+}
+
+#feature-mini .container {
+  max-width: 992px;
+  background: #ffd662;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#feature-mini .col-md-3 {
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  transition: all 0.3s;
+}
+
+#feature-mini .col-md-3:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 575.98px) {
   #feature-mini .col-md-3 {
-    border-right: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
-    transition: all 0.3s;
+    border-right: none;
   }
-  
-  #feature-mini .col-md-3:hover {
-    background: rgba(255, 255, 255, 0.1);
+  #feature-mini .col-md-3:last-child {
+    border-bottom: none;
   }
-  
-  @media (max-width: 575.98px) {
-    #feature-mini .col-md-3 {
-      border-right: none;
-    }
-    #feature-mini .col-md-3:last-child {
-      border-bottom: none;
-    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #feature-mini .col-md-3:nth-child(2n) {
+    border-right: none;
   }
-  
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    #feature-mini .col-md-3:nth-child(2n) {
-      border-right: none;
-    }
-    #feature-mini .col-md-3:nth-child(3n),
-    #feature-mini .col-md-3:nth-child(4n) {
-      border-bottom: none;
-    }
+  #feature-mini .col-md-3:nth-child(3n),
+  #feature-mini .col-md-3:nth-child(4n) {
+    border-bottom: none;
   }
-  
-  @media (min-width: 768px) {
-    #feature-mini .col-md-3 {
-      border-bottom: none;
-    }
-    #feature-mini .col-md-3:nth-child(4n) {
-      border-right: none;
-    }
+}
+
+@media (min-width: 768px) {
+  #feature-mini .col-md-3 {
+    border-bottom: none;
   }
-  
-  #feature-mini .feature-item {
-    padding: 30px 0;
-    text-align: center;
-    transition: transform 0.3s;
+  #feature-mini .col-md-3:nth-child(4n) {
+    border-right: none;
   }
-  
-  #feature-mini .feature-item:hover {
-    transform: scale(1.05);
-  }
-  
-  #feature-mini .feature-item i {
-    color: #ffffff;
-    font-size: 35px;
-    margin-bottom: 10px;
-  }
-  
-  #feature-mini .feature-item h3 {
-    font-size: 22px;
-    font-weight: 500;
-    color: #333333;
-  }
-  
-  #feature-mini .feature-item p {
-    margin: 0;
-    font-size: 16px;
-    color: #444444;
-  }
-  
+}
+
+#feature-mini .feature-item {
+  padding: 30px 0;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+#feature-mini .feature-item:hover {
+  transform: scale(1.05);
+}
+
+#feature-mini .feature-item i {
+  color: #ffffff;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+#feature-mini .feature-item h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #333333;
+}
+
+#feature-mini .feature-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #444444;
+}
 
 /**********************************/
 /******* Section Header CSS *******/
@@ -536,12 +535,12 @@ h6 {
   transition: 0.3s;
 }
 .btn-orange {
-    background-color: #f26531;
-    border: none;
+  background-color: #f26531;
+  border: none;
 }
 
 .btn-orange:hover {
-    background-color: #e05a29;
+  background-color: #e05a29;
 }
 #newsletter form .btn:hover {
   color: #333333;
@@ -566,41 +565,41 @@ h6 {
 }
 
 .perks-table {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    overflow: hidden;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: hidden;
 }
-.table th, .table td {
-    vertical-align: middle;
-    border: none;
+.table th,
+.table td {
+  vertical-align: middle;
+  border: none;
 }
 .table-striped tbody tr:nth-of-type(odd) {
-    background-color: #f8f8f8;
+  background-color: #f8f8f8;
 }
 .checkmark {
-    color: #007bff;
-    font-size: 20px;
+  color: #007bff;
+  font-size: 20px;
 }
 .apply-btn {
-    background-color: #ff6d3b;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    width: 100%;
+  background-color: #ff6d3b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
 }
 .apply-btn:hover {
-    background-color: #e65b2f;
+  background-color: #e65b2f;
 }
 .price {
-    font-size: 18px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 }
-
 
 /**********************************/
 /********** Process CSS ***********/
@@ -1346,9 +1345,18 @@ h6 {
 }
 
 .divider {
-  height: 60px;
+  display: block;
   width: 1px;
   background-color: #151635;
+  margin: auto;
+  height: 60px;
+}
+
+@media (max-width: 767.98px) {
+  /* Hide dividers on smaller devices */
+  .divider {
+    display: none;
+  }
 }
 
 #callback {
