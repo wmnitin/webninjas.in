@@ -107,9 +107,9 @@ h6 {
 #nav .navbar-light .nav-link::after {
   position: absolute;
   content: "";
-  width: 30px;
+  width: 80%;
   height: 2px;
-  left: 9px;
+  left: 10%;
   bottom: 0;
   background: #555555;
   opacity: 0;
