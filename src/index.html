@@ -18,84 +18,20 @@
       content="Frontend Bootcamp, Web Development Course, Live Classes, Recognized Certification, WebNinjas.in, Placement Support, Learn HTML CSS JavaScript, React Training, Frontend Web Development, Online Bootcamp, Career in Web Development"
     />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
-
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- CSS Libraries -->
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link href="lib/slick/slick.css" rel="stylesheet" />
-    <link href="lib/slick/slick-theme.css" rel="stylesheet" />
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
+    <COMMON_HEAD />
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <!-- Nav Start -->
-    <div id="nav">
-      <div class="navbar navbar-expand-md bg-light navbar-light">
-        <a href="https://webninjas.in" class="navbar-brand">
-          <img src="img/logo.png" class="w-100" alt="webninjas Logo" />
-        </a>
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div
-          class="collapse navbar-collapse justify-content-between"
-          id="navbarCollapse"
-        >
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="#header" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#feature" class="nav-link">Frontend Job Bootcamp</a>
-            </li>
-            <li class="nav-item">
-              <a href="#enroll" class="nav-link">Apply Now</a>
-            </li>
-            <li class="nav-item">
-              <a href="#testimonial" class="nav-link">Reviews</a>
-            </li>
-            <li class="nav-item"><a href="#faqs" class="nav-link">FAQs</a></li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- Nav End -->
+    <COMMON_NAVBAR />
 
     <!-- Header Start-->
     <div id="header">
-      <div class="container mt-5">
+      
+      <div class="container mt-3">
         <div class="row">
           <!-- Left container -->
           <div class="col-lg-7 col-md-12 mb-4">
             <div class="container pt-3">
-              <!-- <span class="badge-custom border border-dark rounded-pill p-1"
-                >✨ For Beginners</span
-              > -->
               <div class="badge-container my-4">
                 <span class="badge-custom"
                   >✨ For Beginners & Intermediate</span
@@ -394,19 +330,6 @@
       </div>
     </div>
     <!-- Feature End-->
-
-    <!-- Newsletter Start-->
-    <!-- <div id="newsletter">
-      <img src="img/ninja-developer.png" alt="Newsletter Image" />
-      <div class="container">
-        <h2>Frontend developer community</h2>
-        <form>
-          <input type="email" placeholder="Email here" />
-          <button class="btn">Submit</button>
-        </form>
-      </div>
-    </div> -->
-    <!-- Newsletter End-->
 
     <!-- Benefits Start-->
     <div class="container text-left py-5">
@@ -753,10 +676,13 @@
     <!-- Callback start -->
     <div id="callback">
       <div class="container py-5">
+        <div class="section-header">
+          <p>Have questions ?</p>
+          <h2>Request a call from our counselors</h2>
+        </div>
+
         <div class="d-flex justify-content-center align-items-center">
           <div class="col-md-8">
-            <h5>Have questions?</h5>
-            <p>Request a call from our counselors.</p>
             <div id="leadGenerationComponent"></div>
           </div>
         </div>
@@ -809,41 +735,6 @@
             </div>
           </div>
         </div>
-
-        <!-- <div id="video-section">
-          <div class="container">
-            <div class="youtube-player" data-id="jssO8-5qmag"></div>
-          </div>
-          <script>
-            document.addEventListener("DOMContentLoaded", function () {
-              var div,
-                n,
-                v = document.getElementsByClassName("youtube-player");
-              for (n = 0; n < v.length; n++) {
-                div = document.createElement("div");
-                div.setAttribute("data-id", v[n].dataset.id);
-                div.innerHTML = labnolThumb(v[n].dataset.id);
-                div.onclick = labnolIframe;
-                v[n].appendChild(div);
-              }
-            });
-
-            function labnolThumb(id) {
-              var thumb = '<img src="img/poster.jpg">',
-                play = '<div class="play"></div>';
-              return thumb.replace("ID", id) + play;
-            }
-
-            function labnolIframe() {
-              var iframe = document.createElement("iframe");
-              var embed = "https://www.youtube.com/embed/ID?autoplay=1";
-              iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
-              iframe.setAttribute("frameborder", "0");
-              iframe.setAttribute("allowfullscreen", "1");
-              this.parentNode.replaceChild(iframe, this);
-            }
-          </script>
-        </div> -->
       </div>
     </div>
     <!-- Process End-->
@@ -1081,134 +972,17 @@
                 England | Inkurb LLC, USA | Inkurb LLP, Noida, India
               </h3>
               <h3><i class="fa fa-envelope"></i>contact@webninjas.com</h3>
-              <h3><i class="fa fa-phone"></i>+91-</h3>
+              <h3>
+                <i class="fa-brands fa-whatsapp"></i>+44-7880496686
+                <i class="fa fa-phone pl-2"></i>+91-9818579428
+              </h3>
               <a class="btn" href="https://webninjas.in/contact">Contact Us</a>
-              <!-- <div class="social">
-                <a href="https://twitter.com/webninjas"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a href="https://facebook.com/webninjas"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a href=""><i class="fab fa-linkedin-in"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
-                <a href=""><i class="fab fa-youtube"></i></a>
-              </div> -->
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Contact Start -->
 
-    <!-- Footer Start -->
-    <div id="footer">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <p>
-              &copy; Copyright <a href="https://webninjas.in">webninjas.in</a>.
-              All Rights Reserved
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Footer End -->
-
-    <!-- Back to Top -->
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/slick/slick.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script>
-      const originalForm = document
-        .getElementById("lead-generation")
-        .cloneNode(true);
-      document
-        .getElementById("leadGenerationComponent")
-        .appendChild(originalForm);
-    </script>
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
-      import {
-        getFirestore,
-        collection,
-        addDoc,
-      } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
-
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyAVgdwbfY6KHpDAcmCrAI5AfdsCdLVRZ-o",
-        authDomain: "webninjasin.firebaseapp.com",
-        projectId: "webninjasin",
-        storageBucket: "webninjasin.firebasestorage.app",
-        messagingSenderId: "475603663691",
-        appId: "1:475603663691:web:756eadf5575ff83e94c6ce",
-        measurementId: "G-8ELSQ88JV2",
-      };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-      // Initialize Firestore
-      const db = getFirestore(app);
-
-      // Function to save form data
-      async function saveFormData(name, email, phone, experience) {
-        try {
-          await addDoc(collection(db, "leads"), {
-            // Collection name: "leads"
-            name: name,
-            email: email,
-            phone: phone,
-            experience: experience,
-            timestamp: new Date().toISOString(),
-          });
-          alert("Form data saved successfully!");
-        } catch (e) {
-          console.error("Error adding document: ", e);
-        }
-      }
-
-      // Event listener for your form
-      document
-        .getElementById("lead-generation")
-        .addEventListener("submit", async (event) => {
-          event.preventDefault();
-
-          const name = document.querySelector(
-            'input[placeholder="Enter name"]'
-          ).value;
-          const email = document.querySelector(
-            'input[placeholder="Email"]'
-          ).value;
-          const phone = document.querySelector(
-            'input[placeholder="Phone number"]'
-          ).value;
-          const experience = document
-            .querySelector('input[name="experience"]:checked')
-            ?.nextElementSibling.innerText.trim();
-
-          if (!experience) {
-            alert("Please select your experience.");
-            return;
-          }
-
-          await saveFormData(name, email, phone, experience);
-        });
-    </script>
+    <COMMON_FOOTER />
   </body>
 </html>

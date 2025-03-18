@@ -1,0 +1,128 @@
+<!-- Footer Start -->
+<div id="footer" class="bg-dark text-white py-4 mt-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md-6">
+        <p class="mb-0">
+          &copy; <span id="current-year"></span>
+          <a href="https://webninjas.in" class="text-warning">Webninjas.in</a>.
+          All Rights Reserved.
+        </p>
+        <p class="mb-0 mt-3">Powered by Inkurb Web Solutions LTD</p>
+      </div>
+      <div class="col-md-6 text-md-end text-center mt-3 mt-md-0">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <a href="about.html" class="text-white">About Us</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="privacy.html" class="text-white">Privacy Policy</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="terms.html" class="text-white">Terms & Conditions</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="contact.html" class="text-white">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/slick/slick.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+<script>
+  const originalForm = document
+    .getElementById("lead-generation")
+    .cloneNode(true);
+  document.getElementById("leadGenerationComponent").appendChild(originalForm);
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
+  import {
+    getFirestore,
+    collection,
+    addDoc,
+  } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
+
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAVgdwbfY6KHpDAcmCrAI5AfdsCdLVRZ-o",
+    authDomain: "webninjasin.firebaseapp.com",
+    projectId: "webninjasin",
+    storageBucket: "webninjasin.firebasestorage.app",
+    messagingSenderId: "475603663691",
+    appId: "1:475603663691:web:756eadf5575ff83e94c6ce",
+    measurementId: "G-8ELSQ88JV2",
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  // Initialize Firestore
+  const db = getFirestore(app);
+
+  // Function to save form data
+  async function saveFormData(name, email, phone, experience) {
+    try {
+      await addDoc(collection(db, "leads"), {
+        // Collection name: "leads"
+        name: name,
+        email: email,
+        phone: phone,
+        experience: experience,
+        timestamp: new Date().toISOString(),
+      });
+      alert("Form data saved successfully!");
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
+  }
+
+  // Event listener for your form
+  document
+    .getElementById("lead-generation")
+    .addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      const name = document.querySelector(
+        'input[placeholder="Enter name"]'
+      ).value;
+      const email = document.querySelector('input[placeholder="Email"]').value;
+      const phone = document.querySelector(
+        'input[placeholder="Phone number"]'
+      ).value;
+      const experience = document
+        .querySelector('input[name="experience"]:checked')
+        ?.nextElementSibling.innerText.trim();
+
+      if (!experience) {
+        alert("Please select your experience.");
+        return;
+      }
+
+      await saveFormData(name, email, phone, experience);
+    });
+</script>
+<script>
+  document.getElementById("current-year").textContent =
+    new Date().getFullYear();
+</script>

@@ -1127,7 +1127,7 @@ h6 {
 
 #contact .container-fluid .col-md-6:first-child {
   background: url(../img/webninjas-feature-3.png) center center no-repeat;
-  background-size: contain;
+  background-size: 70%;
 }
 
 #contact .contact-info {
