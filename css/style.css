@@ -170,7 +170,7 @@ h6 {
 }
 
 #header .header-content h2 {
-  font-size: 70px;
+  font-size: 35px;
   font-weight: 700;
 }
 
@@ -364,10 +364,10 @@ h6 {
   text-align: center;
 }
 
-.section-header h1 {
+.section-header h2 {
   margin: 0;
   color: #000000;
-  font-size: 70px;
+  font-size: 35px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -375,8 +375,8 @@ h6 {
 }
 
 @media (max-width: 575.98px) {
-  .section-header h1 {
-    font-size: 45px;
+  .section-header h2 {
+    font-size: 25px;
   }
 }
 
@@ -606,7 +606,7 @@ h6 {
 /**********************************/
 #process {
   position: relative;
-  padding: 75px 0 90px 0;
+  padding: 20px 0;
   background: #ffffff;
 }
 
@@ -620,7 +620,7 @@ h6 {
   position: absolute;
   top: 12px;
   right: -12px;
-  content: "\f061";
+  content: "\f07e";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 45px;
@@ -633,7 +633,7 @@ h6 {
 
 #process .process-col i {
   color: #ffd662;
-  font-size: 90px;
+  font-size: 50px;
   margin-bottom: 15px;
 }
 
@@ -914,11 +914,6 @@ h6 {
   position: relative;
   padding: 90px 0;
   text-align: center;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.8)
-    ),
-    url(../img/header-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -950,7 +945,7 @@ h6 {
   z-index: 1;
 }
 
-#testimonial .testimonial-slider-nav .slick-slide img {
+#testimonial .testimonial-slider-nav .slick-slide i {
   position: relative;
   display: block;
   margin-top: 23px;
