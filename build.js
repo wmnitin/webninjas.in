@@ -8,10 +8,15 @@ const injectPartials = (filePath) => {
   const common_head = fs.readFileSync("src/common/_head.html", "utf8");
   const common_navbar = fs.readFileSync("src/common/_navbar.html", "utf8");
   const common_footer = fs.readFileSync("src/common/_footer.html", "utf8");
+  const common_lead_generation = fs.readFileSync(
+    "src/common/_lead_generation.html",
+    "utf8"
+  );
 
   content = content.replace("<COMMON_HEAD />", common_head);
   content = content.replace("<COMMON_NAVBAR />", common_navbar);
   content = content.replace("<COMMON_FOOTER />", common_footer);
+  content = content.replace(/<LEAD_GENERATION \/>/g, common_lead_generation);
 
   const outputDir = "dist";
   if (!fs.existsSync(outputDir)) {

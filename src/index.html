@@ -26,7 +26,6 @@
 
     <!-- Header Start-->
     <div id="header">
-      
       <div class="container mt-3">
         <div class="row">
           <!-- Left container -->
@@ -102,109 +101,7 @@
                 future instructor.
               </h4>
 
-              <form id="lead-generation">
-                <div class="mb-3">
-                  <label class="form-label font-weight-bold"
-                    >Name <span class="text-danger">*</span></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Enter name"
-                    required
-                  />
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label font-weight-bold"
-                    >Email <span class="text-danger">*</span></label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Email"
-                    required
-                  />
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label font-weight-bold"
-                    >Phone Number <span class="text-danger">*</span></label
-                  >
-                  <div class="input-group">
-                    <span class="input-group-text">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
-                        alt="India Flag"
-                        width="20"
-                      />
-                    </span>
-                    <input
-                      type="tel"
-                      class="form-control"
-                      placeholder="Phone number"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div class="mb-3 cursor-pointer">
-                  <label class="form-label font-weight-bold"
-                    >Experience <span class="text-danger">*</span></label
-                  >
-                  <div class="form-check mb-1">
-                    <input
-                      id="student"
-                      class="form-check-input"
-                      type="radio"
-                      name="experience"
-                      required
-                    />
-                    <label class="form-check-label" for="student"
-                      >College Student – Preparing for the Future</label
-                    >
-                  </div>
-                  <div class="form-check mb-1">
-                    <input
-                      id="graduate"
-                      class="form-check-input"
-                      type="radio"
-                      name="experience"
-                      required
-                    />
-                    <label class="form-check-label" for="graduate"
-                      >Recent Graduate – Looking for a Job</label
-                    >
-                  </div>
-                  <div class="form-check mb-1">
-                    <input
-                      id="professional"
-                      class="form-check-input"
-                      type="radio"
-                      name="experience"
-                      required
-                    />
-                    <label class="form-check-label" for="professional"
-                      >Working Professional – Seeking a Better Salary
-                      Hike</label
-                    >
-                  </div>
-                  <div class="form-check mb-1">
-                    <input
-                      id="other"
-                      class="form-check-input"
-                      type="radio"
-                      name="experience"
-                      required
-                    />
-                    <label class="form-check-label" for="other">Other</label>
-                  </div>
-                </div>
-
-                <button type="submit" class="btn btn-warning w-100 fw-bold">
-                  Book Now
-                </button>
-              </form>
+              <LEAD_GENERATION />
             </div>
           </div>
         </div>
@@ -501,9 +398,12 @@
         <a href="#callback" class="btn btn-outline-dark px-4">
           Request callback
         </a>
-        <button class="btn btn-warning text-white fw-bold pl-4 pr-4">
+        <a
+          href="#callback"
+          class="btn btn-warning text-white fw-bold pl-4 pr-4"
+        >
           Book a free webinar
-        </button>
+        </a>
       </div>
     </div>
     <!-- Benefits end-->
@@ -683,7 +583,7 @@
 
         <div class="d-flex justify-content-center align-items-center">
           <div class="col-md-8">
-            <div id="leadGenerationComponent"></div>
+            <LEAD_GENERATION />
           </div>
         </div>
       </div>
